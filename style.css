@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+    font-family: "Glory", sans-serif;
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.heading-container {
+    text-align: center;
+}
+
+.heading-container h1 {
+    color: #323232;
+}
+
+.input-container {
+    display: flex;
+    gap: 8px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 8px 6px;
+    font-size: 16px;
+    background-color: #fbfbfb;
+    color: #323232;
+    border: 1px solid #32323232;
+}
+
+.input-container button {
+    width: max-content;
+    padding: 8px 24px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+.todos-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+}
+
+.todo-item {
+    display: flex;
+    gap: 6px;
+    padding: 6px;
+    border: 1px solid #32323232;
+}
+
+.complete-checkbox {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #007bff;
+    background-color: #fbfbfb;
+    cursor: pointer;
+}
+
+.complete-checkbox.checked {
+    background-color: #007bff;
+}
+
+.todo-title {
+    flex: 1;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #323232;
+    word-break: break-word;
+    font-size: 18px;
+}
+
+.todo-action-btns {
+    display: flex;
+    gap: 6px;
+}
+
+.todo-action-btns button {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+.todo-action-btns svg {
+    width: 18px;
+    height: 18px;
+}
+
+.todo-action-btns .edit-todo-btn {
+    background-color: #28a745;
+}
+
+.todo-action-btns .delete-todo-btn {
+    background-color: #dc3545;
+}
+
+.todo-action-btns .confirm-todo-btn {
+    background-color: #007bff;
+    display: none;
+}
+
+.todo-item.being-edited button {
+    display: none;
+}
+
+.todo-item.being-edited .confirm-todo-btn {
+    display: block;
+}
+
+.no-items-alert {
+    font-size: 18px;
+    color: #323232;
+    text-align: center;
+}
